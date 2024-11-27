@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<body class="bg-black">
+    <section class="container bg-[#121214] rounded-lg mt-7 ">
+      
+        <div class="flex flex-col items-center justify-center gap-y-3 p-9 mb-2 ">
+          <h2 class="text-white text-3xl lg:text-4xl text-center font-PoppinsBold">Works & Projects</h2>
+          <p class="text-[#9F9F9F] lg:text-xl text-center w-80 lg:w-[680px]">Check out some of my design projects, meticulously crafted with love and dedication, each one reflecting the passion and soul I poured into every detail.</p>
+        </div>
+  
+        <!--Tabs navigation-->
+        <ul class="mx-12 mb-5 flex list-none flex-row flex-wrap border-b-0 ps-0" role="tablist" data-twe-nav-ref> 
+          <li role="presentation">
+            <a href="#tabs-home" class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium  leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:text-[#EB5D3A] focus:isolate focus:border-transparent data-[twe-nav-active]:border-[#EB5D3A] data-[twe-nav-active]:text-[#EB5D3A] dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-[#EB5D3A]"
+              data-twe-toggle="pill" data-twe-target="#tabs-home" data-twe-nav-active role="tab" aria-controls="tabs-home" aria-selected="true" >All</a>
+          </li>
+          <li role="presentation">
+            <a href="#tabs-profile" class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium  leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:text-[#EB5D3A] focus:isolate focus:border-transparent data-[twe-nav-active]:border-[#EB5D3A] data-[twe-nav-active]:text-[#EB5D3A] dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-[#EB5D3A]"
+              data-twe-toggle="pill" data-twe-target="#tabs-profile" role="tab" aria-controls="tabs-profile" aria-selected="false" >Design</a>
+          </li>
+          <li role="presentation">
+            <a href="#tabs-messages" class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium  leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:text-[#EB5D3A] focus:isolate focus:border-transparent data-[twe-nav-active]:border-[#EB5D3A] data-[twe-nav-active]:text-[#EB5D3A] dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-[#EB5D3A]"
+              data-twe-toggle="pill" data-twe-target="#tabs-messages" role="tab" aria-controls="tabs-messages" aria-selected="false" >Game</a >
+          </li>
+          <li role="presentation">
+            <a href="#tabs-contact" class="disabled pointer-events-none my-2 block border-x-0 border-b-2 border-t-0 border-transparent bg-transparent px-7 pb-3.5 pt-4 text-xs font-medium  leading-tight text-neutral-400 hover:isolate hover:border-transparent hover:text-[#EB5D3A] focus:isolate focus:border-transparent dark:text-neutral-600"
+              data-twe-toggle="pill" data-twe-target="#tabs-contact" role="tab" aria-controls="tabs-contact" aria-selected="false" >Branding</a>
+          </li>
+          <li role="presentation">
+            <a href="#tabs-Marketing" class="disabled pointer-events-none my-2 block border-x-0 border-b-2 border-t-0 border-transparent bg-transparent px-7 pb-3.5 pt-4 text-xs font-medium  leading-tight text-neutral-400 hover:isolate hover:border-transparent hover:text-[#EB5D3A] focus:isolate focus:border-transparent dark:text-neutral-600"
+              data-twe-toggle="pill" data-twe-target="#tabs-contact" role="tab" aria-controls="tabs-contact" aria-selected="false" >Marketing</a>
+          </li>
+        </ul>
+  
+        <!--Tabs content-->
+        <div class=" ">
+          <div class="mx-5 lg:mx-12 grid  lg:grid-cols-3 gap-x-5 mb-6 opacity-100 transition-opacity duration-150 ease-linear " id="tabs-home" role="tabpanel" aria-labelledby="tabs-home-tab" data-twe-tab-active>
+            <div class="relative flex flex-col items-start justify-start border border-[#77777D33]/20 rounded-xl mb-5">
+                <div class="relative group">
+                    <!-- لایه عکس با کاهش روشنایی در حالت هاور -->
+                    <img src="../public/images/work1-CBmW8qa2.jpg.png" alt="photo" class="w-full h-full rounded-xl group-hover:opacity-25 transition duration-500">
+                    
+                    <!-- دایره نارنجی با آیکون، نمایان شدن در حالت هاور -->
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center">
+                            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 6.75C8.58579 6.75 8.25 6.41421 8.25 6C8.25 5.58579 8.58579 5.25 9 5.25H18C18.4142 5.25 18.75 5.58579 18.75 6V15C18.75 15.4142 18.4142 15.75 18 15.75C17.5858 15.75 17.25 15.4142 17.25 15V7.81066L6.53033 18.5303C6.23744 18.8232 5.76256 18.8232 5.46967 18.5303C5.17678 18.2374 5.17678 17.7626 5.46967 17.4697L16.1893 6.75H9Z" fill="#fff"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- متن‌ها -->
+                <p class="text-xl text-[#77777D] mt-4 px-3">Design</p>
+                <h3 class="text-2xl text-[#CCCCCC] mt-1 px-3 pb-4">Mobile Application Design</h3>
+            </div>
+            <div class="relative flex flex-col items-start justify-start border border-[#77777D33]/20 rounded-xl mb-5">
+                <div class="relative group">
+                    <!-- لایه عکس با کاهش روشنایی در حالت هاور -->
+                    <img src="../public/images/work1-CBmW8qa2.jpg.png" alt="photo" class="w-full h-full rounded-xl group-hover:opacity-25 transition duration-500">
+                    
+                    <!-- دایره نارنجی با آیکون، نمایان شدن در حالت هاور -->
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center">
+                            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 6.75C8.58579 6.75 8.25 6.41421 8.25 6C8.25 5.58579 8.58579 5.25 9 5.25H18C18.4142 5.25 18.75 5.58579 18.75 6V15C18.75 15.4142 18.4142 15.75 18 15.75C17.5858 15.75 17.25 15.4142 17.25 15V7.81066L6.53033 18.5303C6.23744 18.8232 5.76256 18.8232 5.46967 18.5303C5.17678 18.2374 5.17678 17.7626 5.46967 17.4697L16.1893 6.75H9Z" fill="#fff"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- متن‌ها -->
+                <p class="text-xl text-[#77777D] mt-4 px-3">Design</p>
+                <h3 class="text-2xl text-[#CCCCCC] mt-1 px-3 pb-4">Mobile Application Design</h3>
+            </div>
+            
+            <div class="relative flex flex-col items-start justify-start border border-[#77777D33]/20 rounded-xl mb-5">
+                <div class="relative group">
+                    <!-- لایه عکس با کاهش روشنایی در حالت هاور -->
+                    <img src="../public/images/work1-CBmW8qa2.jpg.png" alt="photo" class="w-full h-full rounded-xl group-hover:opacity-25 transition duration-500">
+                    
+                    <!-- دایره نارنجی با آیکون، نمایان شدن در حالت هاور -->
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center">
+                            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 6.75C8.58579 6.75 8.25 6.41421 8.25 6C8.25 5.58579 8.58579 5.25 9 5.25H18C18.4142 5.25 18.75 5.58579 18.75 6V15C18.75 15.4142 18.4142 15.75 18 15.75C17.5858 15.75 17.25 15.4142 17.25 15V7.81066L6.53033 18.5303C6.23744 18.8232 5.76256 18.8232 5.46967 18.5303C5.17678 18.2374 5.17678 17.7626 5.46967 17.4697L16.1893 6.75H9Z" fill="#fff"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- متن‌ها -->
+                <p class="text-xl text-[#77777D] mt-4 px-3">Design</p>
+                <h3 class="text-2xl text-[#CCCCCC] mt-1 px-3 pb-4">Mobile Application Design</h3>
+            </div>
+            
+            <div class="relative flex flex-col items-start justify-start border border-[#77777D33]/20 rounded-xl mb-5">
+                <div class="relative group">
+                    <!-- لایه عکس با کاهش روشنایی در حالت هاور -->
+                    <img src="../public/images/work1-CBmW8qa2.jpg.png" alt="photo" class="w-full h-full rounded-xl group-hover:opacity-25 transition duration-500">
+                    
+                    <!-- دایره نارنجی با آیکون، نمایان شدن در حالت هاور -->
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center">
+                            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 6.75C8.58579 6.75 8.25 6.41421 8.25 6C8.25 5.58579 8.58579 5.25 9 5.25H18C18.4142 5.25 18.75 5.58579 18.75 6V15C18.75 15.4142 18.4142 15.75 18 15.75C17.5858 15.75 17.25 15.4142 17.25 15V7.81066L6.53033 18.5303C6.23744 18.8232 5.76256 18.8232 5.46967 18.5303C5.17678 18.2374 5.17678 17.7626 5.46967 17.4697L16.1893 6.75H9Z" fill="#fff"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- متن‌ها -->
+                <p class="text-xl text-[#77777D] mt-4 px-3">Design</p>
+                <h3 class="text-2xl text-[#CCCCCC] mt-1 px-3 pb-4">Mobile Application Design</h3>
+            </div>
+            
+            <div class="relative flex flex-col items-start justify-start border border-[#77777D33]/20 rounded-xl mb-5">
+                <div class="relative group">
+                    <!-- لایه عکس با کاهش روشنایی در حالت هاور -->
+                    <img src="../public/images/work1-CBmW8qa2.jpg.png" alt="photo" class="w-full h-full rounded-xl group-hover:opacity-25 transition duration-500">
+                    
+                    <!-- دایره نارنجی با آیکون، نمایان شدن در حالت هاور -->
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center">
+                            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 6.75C8.58579 6.75 8.25 6.41421 8.25 6C8.25 5.58579 8.58579 5.25 9 5.25H18C18.4142 5.25 18.75 5.58579 18.75 6V15C18.75 15.4142 18.4142 15.75 18 15.75C17.5858 15.75 17.25 15.4142 17.25 15V7.81066L6.53033 18.5303C6.23744 18.8232 5.76256 18.8232 5.46967 18.5303C5.17678 18.2374 5.17678 17.7626 5.46967 17.4697L16.1893 6.75H9Z" fill="#fff"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- متن‌ها -->
+                <p class="text-xl text-[#77777D] mt-4 px-3">Design</p>
+                <h3 class="text-2xl text-[#CCCCCC] mt-1 px-3 pb-4">Mobile Application Design</h3>
+            </div>
+            
+            <div class="relative flex flex-col items-start justify-start border border-[#77777D33]/20 rounded-xl mb-5">
+                <div class="relative group">
+                    <!-- لایه عکس با کاهش روشنایی در حالت هاور -->
+                    <img src="../public/images/work1-CBmW8qa2.jpg.png" alt="photo" class="w-full h-full rounded-xl group-hover:opacity-25 transition duration-500">
+                    
+                    <!-- دایره نارنجی با آیکون، نمایان شدن در حالت هاور -->
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center">
+                            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 6.75C8.58579 6.75 8.25 6.41421 8.25 6C8.25 5.58579 8.58579 5.25 9 5.25H18C18.4142 5.25 18.75 5.58579 18.75 6V15C18.75 15.4142 18.4142 15.75 18 15.75C17.5858 15.75 17.25 15.4142 17.25 15V7.81066L6.53033 18.5303C6.23744 18.8232 5.76256 18.8232 5.46967 18.5303C5.17678 18.2374 5.17678 17.7626 5.46967 17.4697L16.1893 6.75H9Z" fill="#fff"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- متن‌ها -->
+                <p class="text-xl text-[#77777D] mt-4 px-3">Design</p>
+                <h3 class="text-2xl text-[#CCCCCC] mt-1 px-3 pb-4">Mobile Application Design</h3>
+            </div>
+            
+          </div>
+
+          <div class=" mx-5 lg:mx-12 lg:grid  lg:grid-cols-3 gap-x-5 mb-6   hidden opacity-0 transition-opacity duration-150 ease-linear  text-white" id="tabs-profile" role="tabpanel" aria-labelledby="tabs-profile-tab">
+            <div class="flex flex-col items-start justify-start  border border-[#77777D33]/20 rounded-xl mb-5 ">
+              <img class="hover:opacity-25" src="../public/images/work1-CBmW8qa2.jpg.png" alt="photo">
+                <p class="text-xl text-[#77777D] mt-4 px-3">Design</p>
+                <h3 class="text-2xl text-[#CCCCCC] mt-1 px-3 pb-4">Mobile Application Design</h3>
+            </div>
+          </div>
+
+          <div class="hidden opacity-0 transition-opacity duration-150 ease-linear " id="tabs-messages" role="tabpanel" aria-labelledby="tabs-profile-tab"> Tab 3 content </div>
+          <div class="hidden opacity-0 transition-opacity duration-150 ease-linear " id="tabs-contact" role="tabpanel" aria-labelledby="tabs-contact-tab">Tab 4 content </div>
+        </div>
+  
+      </section>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+@import "public/css/font.css";
+@import "public/css/icon.css";
+@import "public/css/custom.css";
+@import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+
+  justify-content: center;
+  align-items: center;
+}
+
