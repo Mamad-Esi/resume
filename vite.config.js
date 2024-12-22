@@ -10,8 +10,8 @@ export default defineConfig({
         about: resolve(__dirname, 'page/about.html'),
         contact: resolve(__dirname, 'page/contact.html'),
         single: resolve(__dirname, 'page/single.html'),
-        work: resolve(__dirname, 'page/Work.html'),
-        works: resolve(__dirname, 'page/Works.html'),
+        work: resolve(__dirname, 'page/work.html'),
+        works: resolve(__dirname, 'page/works.html'),
       }
     }
   }
