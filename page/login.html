@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | EskandariCode</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#0f0f0f] flex items-center justify-center min-h-screen">
+
+  <div class="bg-[#1c1c1c] text-white w-full max-w-md p-8 rounded-xl shadow-lg transition-all duration-500 ease-in-out transform hover:scale-[1.02]">
+    <h2 class="text-3xl font-bold text-center mb-2 animate-fade-in-down">Welcome Back</h2>
+    <p class="text-center text-gray-400 mb-6 text-sm animate-fade-in-down delay-100">Please login to your account</p>
+
+    <form class="space-y-5" onsubmit="handleLogin(event)">
+      <!-- Email -->
+      <div class="flex flex-col">
+        <label for="email" class="text-sm mb-1">Email</label>
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="you@example.com"
+          class="bg-[#2a2a2a] text-white px-4 py-2 rounded-md focus:ring-2 focus:ring-orange-500 transition"
+        />
+      </div>
+
+      <!-- Password -->
+      <div class="flex flex-col relative">
+        <label for="password" class="text-sm mb-1">Password</label>
+        <input
+          type="password"
+          id="password"
+          required
+          placeholder="••••••••"
+          class="bg-[#2a2a2a] text-white px-4 py-2 rounded-md focus:ring-2 focus:ring-orange-500 transition"
+        />
+        <button
+          type="button"
+          onclick="togglePassword()"
+          class="absolute right-3 top-9 text-xs text-orange-400 hover:text-orange-500"
+        >
+          Show
+        </button>
+      </div>
+
+      <!-- Remember + Forgot -->
+      <div class="flex items-center justify-between text-sm text-gray-400">
+        <label><input type="checkbox" class="accent-orange-500 mr-1" /> Remember me</label>
+        <a href="#" class="text-orange-500 hover:underline">Forgot password?</a>
+      </div>
+
+      <!-- Login Button -->
+      <button
+        type="submit"
+        class="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md transition transform hover:scale-105"
+      >
+        Login
+      </button>
+    </form>
+
+    <p class="mt-6 text-center text-sm text-gray-400">
+      Don't have an account?
+      <a href="#" class="text-orange-500 hover:underline">Sign up</a>
+    </p>
+  </div>
+
+  <!-- Inline JavaScript -->
+  <script>
+    function togglePassword() {
+      const input = document.getElementById('password');
+      const btn = event.target;
+      if (input.type === 'password') {
+        input.type = 'text';
+        btn.textContent = 'Hide';
+      } else {
+        input.type = 'password';
+        btn.textContent = 'Show';
+      }
+    }
+
+    function handleLogin(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      alert("Logging in with: " + email);
+    }
+
+    // Simple fade-in animation
+    document.querySelectorAll('.animate-fade-in-down').forEach((el, i) => {
+      setTimeout(() => {
+        el.classList.add('opacity-100', 'translate-y-0');
+      }, 100 * i);
+    });
+  </script>
+
+  <!-- Custom animation via Tailwind -->
+  <style>
+    .animate-fade-in-down {
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: all 0.5s ease-out;
+    }
+    .animate-fade-in-down.opacity-100 {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+
+</body>
+</html>

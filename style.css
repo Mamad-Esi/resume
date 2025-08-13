@@ -1,14 +1,69 @@
-@import "public/css/font.css";
-@import "public/css/icon.css";
-@import "public/css/custom.css";
-@import "@fancyapps/ui/dist/fancybox/fancybox.css";
+@import './public/css/font.css' layer(base);
+@import './public/css/icon.css' layer(base);
+@import './public/css/custom.css' layer(base);
+@import '@fancyapps/ui/dist/fancybox/fancybox.css' layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
+@import '@fortawesome/fontawesome-free/css/all.css' layer(utilities);
 
-@import "@fortawesome/fontawesome-free/css/all.css";
+@plugin 'tw-elements/plugin.cjs';
+
+@source './node_modules/tw-elements/js/**/*.js';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-weight-*: initial;
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  --font-Poppins: Poppins, sans-serif;
+}
+
+@utility container {
+  margin-inline: auto;
+  @media (width >= --theme(--breakpoint-xs)) {
+    max-width: none;
+  }
+  @media (width >= 354px) {
+    max-width: 354px;
+  }
+  @media (width >= 750px) {
+    max-width: 750px;
+  }
+  @media (width >= 1000px) {
+    max-width: 1000px;
+  }
+  @media (width >= 1280px) {
+    max-width: 1280px;
+  }
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 .swiper {
   width: 100%;
